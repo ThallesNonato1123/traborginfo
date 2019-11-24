@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/geral.css">
+    <title>Cadastro</title>
+    
+</head>
+
+<body>
+    <div class="row">
+        <div id="main" class="offset-s3 col s6 hoverable">
+            <nav id="nav">
+                <div class="nav-wrapper light-blue darken-4">
+                    <p id="nav-text" class="center-align flow-text">Cadastro</p>
+                </div>
+            </nav>
+
+            <div class="col s12">
+                <form action="http://localhost:8080/cadastro" method="POST">
+                    <div class="input-field col s6">
+                        <span for="cnpj">Email:</span>
+                        <input id="email" name="email" value="" type="text" class="validate">
+                    </div>
+                    <div class="input-field col s6">
+                        <span for="cnpj">Confirmação de Email:</span>
+                        <input id="confirmEmail" name="confirmEmail" value="" type="text" class="validate">
+                    </div>
+                    <div class="input-field col s6">
+                        <span for="cnpj">Senha:</span>
+                        <input id="senha" name="senha" value="" type="password" class="validate">
+                    </div>
+                    <div class="input-field col s6">
+                        <span for="cnpj">Confirmação de Senha:</span>
+                        <input id="confirmSenha" name="confirmSenha" value="" type="password" class="validate">
+                    </div>
+                    <div class="input-field col s6">
+                        <span for="cnpj">Nome da empresa:</span>
+                        <input id="empresa" name="empresa" value="" type="text" class="validate">
+                    </div>
+                    <div class="input-field col s6">
+                        <span for="cnpj">CNPJ:</span>
+                        <input id="cnpj" name="cnpj" maxlength="14" value="" type="text" class="validate">
+                    </div>
+
+                    <button type="submit" class="btn right light-blue darken-4">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
